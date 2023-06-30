@@ -1,6 +1,16 @@
+:root{
+    --azul-dnc: #0C70F2;
+    --preto-dnc: #303030;
+    --cinza-hover: #C9C9C9;
+
+    --font-padrao: 'Inter';
+}
+
 body{
     margin: 0px;
     padding: 0px;
+    background: linear-gradient(180deg, rgba(12, 112, 242, 0.50) 30%, rgba(12, 112, 242, 0.00) 40%), #303030;
+    background-repeat: no-repeat;
 }
 
 /* Navigation main menu */
@@ -22,7 +32,7 @@ body{
 
     #mainMenu div a{
         font-family: 'Inter';
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         color: #FFFFFF;
         text-decoration: none;
@@ -32,7 +42,7 @@ body{
         margin-right: 5%;
         background: #0C70F2;
         font-family: 'Inter';
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 600;
         line-height: 24px;
         text-align: center;
@@ -50,4 +60,87 @@ body{
 
     #mainMenu div a:hover{
         color: #dbd9d9;
+    }
+
+    header h1{
+        color: #FFF;
+        font-size: 50px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+    }
+
+    header h2{
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 100px;
+    }
+    span{
+        background-color: black;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    form{
+        color: #FFF;
+        text-align: left;
+        font-size: 20px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .placeholder{
+        width: 400px;
+        height: 45px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.90);
+        margin: 10px 0px 20px 0px;
+        padding-left: 10px;
+    }
+    .formGroup{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #checkboxItems{
+        color: #FFF;
+        text-align: left;
+        font-size: 19px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500px;
+        line-height: normal;
+        margin-bottom: 40px;
+    }
+
+    #registerButton{
+        width: 400px;
+        height: 50px;
+        border-radius: 10px;
+        background: rgba(12, 112, 242, 0.90);
+        box-shadow: 0px 6px 4px 0px rgba(12, 112, 242, 0.25);
+        margin: 90px 0px 20px 10px;
+        cursor: pointer;
+    }
+
+    input[type="checkbox"]{
+        transform: scale(1.5);
+        margin-top: 10px;
     }
